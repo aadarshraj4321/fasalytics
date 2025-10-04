@@ -488,6 +488,11 @@ import os
 from fastapi.staticfiles import StaticFiles 
 import time
 import shutil
+
+import sys
+import numpy.core.numeric as numeric
+sys.modules['numpy._core.numeric'] = numeric
+
 # Subprocess is no longer needed as the 3D rendering is on the frontend
 # import subprocess 
 
